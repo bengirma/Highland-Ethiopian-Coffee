@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Products - Highland Ethiopian Coffees</title>
+    <title>Products - Highland Ethiopian Coffee</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
@@ -14,8 +14,21 @@
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About Us</a>
+                        <ul class="dropdown">
+                            <li><a href="mission.html">Mission</a></li>
+                            <li><a href="vision.html">Vision</a></li>
+                            <li><a href="quality.html">Quality</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="products.html">Products</a>
+                        <ul class="dropdown">
+                            <li><a href="yirgacheffe.html">Yirgacheffe Coffee</a></li>
+                            <li><a href="sidamo.html">Sidamo Coffee</a></li>
+                            <li><a href="harrar.html">Harrar Coffee</a></li>
+                            <li><a href="limu.html">Limu Coffee</a></li>
+                        </ul></li>
                     <li><a href="contact.html">Contact Us</a></li>
                 </ul>
             </nav>
@@ -26,9 +39,28 @@
         <div class="container">
             <h2>Our Products</h2>
             <div class="product">
-                <h3>Coffee Beans</h3>
-                <p>Explore our selection of premium coffee beans.</p>
-                <a href="#" class="btn">View Details</a>
+                <a href="yirgacheffe.html">
+                    <img src="images/yirgacheffe.jpg" alt="Yirgacheffe Coffee">
+                    <h3>Yirgacheffe Coffee</h3>
+                </a>
+            </div>
+            <div class="product">
+                <a href="sidamo.html">
+                    <img src="images/sidamo.jpg" alt="Sidamo Coffee">
+                    <h3>Sidamo Coffee</h3>
+                </a>
+            </div>
+            <div class="product">
+                <a href="harrar.html">
+                    <img src="images/harrar.jpg" alt="Harrar Coffee">
+                    <h3>Harrar Coffee</h3>
+                </a>
+            </div>
+            <div class="product">
+                <a href="limu.html">
+                    <img src="images/limu.jpg" alt="Limu Coffee">
+                    <h3>Limu Coffee</h3>
+                </a>
             </div>
             <!-- Add more products as needed -->
         </div>
@@ -36,7 +68,7 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2024 Highland Ethiopian Coffees. All rights reserved.</p>
+            <p>&copy; 2024 Highland Ethiopian Coffee. All rights reserved.</p>
         </div>
     </footer>
 

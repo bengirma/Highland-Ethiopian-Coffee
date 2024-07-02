@@ -14,8 +14,22 @@
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About Us</a>
+                        <ul class="dropdown">
+                            <li><a href="mission.html">Mission</a></li>
+                            <li><a href="vision.html">Vision</a></li>
+                            <li><a href="quality.html">Quality</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="products.html">Products</a>
+                        <ul class="dropdown">
+                            <li><a href="yirgacheffe.html">Yirgacheffe Coffee</a></li>
+                            <li><a href="sidamo.html">Sidamo Coffee</a></li>
+                            <li><a href="harrar.html">Harrar Coffee</a></li>
+                            <li><a href="limu.html">Limu Coffee</a></li>
+                        </ul>
+                    </li>
                     <li><a href="contact.html">Contact Us</a></li>
                 </ul>
             </nav>
@@ -26,7 +40,7 @@
         <div class="container">
             <h2>Contact Us</h2>
             <p>Get in touch with us for inquiries or orders.</p>
-            <form action="#" method="POST">
+            <form action="#" method="POST" onsubmit="return sendMessage();">
                 <input type="text" name="name" placeholder="Your Name" required>
                 <input type="email" name="email" placeholder="Your Email" required>
                 <textarea name="message" placeholder="Your Message" required></textarea>
