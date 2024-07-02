@@ -39,17 +39,40 @@ nav ul {
     list-style-type: none;
     text-align: center;
     margin-top: 10px;
+    position: relative;
 }
 
 nav ul li {
     display: inline-block;
     margin-left: 20px;
+    position: relative;
 }
 
 nav ul li a {
     text-decoration: none;
     color: #4a2e1f; /* Dark brown */
     padding: 10px 15px;
+    display: block;
+}
+
+nav ul li .dropdown {
+    display: none;
+    position: absolute;
+    background-color: #FAE5C3; /* Beige color */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    min-width: 200px;
+    top: 100%;
+    left: 0;
+}
+
+nav ul li .dropdown li {
+    display: block;
+    margin-left: 0;
+}
+
+nav ul li:hover .dropdown {
+    display: block;
 }
 
 .hero {
