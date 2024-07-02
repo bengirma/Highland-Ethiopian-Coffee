@@ -6,9 +6,8 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     line-height: 1.6;
-    background-color: #f7f7f7;
     background-color: #FAE5C3; /* Beige background */
 }
 
@@ -63,13 +62,13 @@ nav ul li a {
 .hero h2 {
     font-size: 3rem;
     margin-bottom: 20px;
-    color: #4A2E1F; /* Dark brown */
+    color: #FAE5C3; /* Beige color */
 }
 
 .hero p {
     font-size: 1.2rem;
     margin-bottom: 30px;
-    color: #4A2E1F; /* Dark brown */
+    color: #FAE5C3; /* Beige color */
 }
 
 .btn {
