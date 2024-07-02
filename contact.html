@@ -55,6 +55,12 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="script.js">
+        function sendMessage() {
+                alert ('Thank you for your request! An email has been sent to Highland Ethiopian Coffee with your message.');
+                // Here you can add AJAX to actually sned the email if required.
+            return false; //Prevent form submission
+        }
+    </script>
 </body>
 </html>
