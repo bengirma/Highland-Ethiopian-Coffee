@@ -135,16 +135,21 @@ nav ul li:hover .dropdown {
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 30px;
+    display: inline-block;
+    vertical-align: top;
+    width: 200px; /* Fixed width for thumbnail */
+    margin-right: 20px;
+}
+
+.products .product img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
 }
 
 .products .product h3 {
-    font-size: 2rem;
+    font-size: 1.2rem;
     margin-bottom: 10px;
-}
-
-.products .product p {
-    font-size: 1.1rem;
-    margin-bottom: 15px;
 }
 
 .contact form {
