@@ -71,7 +71,7 @@ nav ul li .dropdown li {
     margin-left: 0;
 }
 
-nav ul li:hover .dropdown {
+nav ul li:hover .dropdown, nav ul li:focus-within .dropdown {
     display: block;
 }
 
@@ -137,7 +137,7 @@ nav ul li:hover .dropdown {
     margin-bottom: 30px;
     display: inline-block;
     vertical-align: top;
-    width: 200px; /* Fixed width for thumbnail */
+    width: 10px; /* Fixed width for thumbnail */
     margin-right: 20px;
 }
 
@@ -185,7 +185,6 @@ footer {
     color: #fff;
     text-align: center;
     padding: 10px 0;
-    position: absolute;
-    width: 100%;
+    position: fixed;
     bottom: 0;
 }
