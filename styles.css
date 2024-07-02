@@ -185,7 +185,6 @@ footer {
     color: #fff;
     text-align: center;
     padding: 10px 0;
-    position: absolute;
-    width: 100%;
+    position: fixed;
     bottom: 0;
 }
