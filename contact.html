@@ -3,14 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - Highland Ethiopian Coffees</title>
+    <title>Contact Us - Highland Ethiopian Coffee</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("YOUR_USER_ID"); // Replace "YOUR_USER_ID" with your actual EmailJS user ID
+        })();
+    </script>
 </head>
 <body>
     <header>
         <div class="container">
-            <img src="images/Highland-Logo.jpg" alt="Highland Ethiopian Coffees Logo" class="logo">
+            <img src="images/Highland-Logo.jpg" alt="Highland Ethiopian Coffee Logo" class="logo">
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -40,7 +46,7 @@
         <div class="container">
             <h2>Contact Us</h2>
             <p>Get in touch with us for inquiries or orders.</p>
-            <form action="#" method="POST" onsubmit="return sendMessage();">
+            <form id="contact-form">
                 <input type="text" name="name" placeholder="Your Name" required>
                 <input type="email" name="email" placeholder="Your Email" required>
                 <textarea name="message" placeholder="Your Message" required></textarea>
@@ -55,12 +61,5 @@
         </div>
     </footer>
 
-    <script src="script.js">
-        function sendMessage() {
-                alert ('Thank you for your request! An email has been sent to Highland Ethiopian Coffee with your message.');
-                // Here you can add AJAX to actually sned the email if required.
-            return false; //Prevent form submission
-        }
-    </script>
-</body>
-</html>
+    <script>
+        document.getElementById('contact-form').addEventListener('
