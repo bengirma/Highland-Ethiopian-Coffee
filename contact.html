@@ -9,7 +9,7 @@
     <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <script type="text/javascript">
         (function() {
-            emailjs.init("bengirma@gmail.com"); // Replace "YOUR_USER_ID" with your actual EmailJS user ID
+            emailjs.init("Benjamin Tesfaye"); // Replace "YOUR_USER_ID" with your actual EmailJS user ID
         })();
     </script>
 </head>
@@ -65,7 +65,7 @@
         document.getElementById('contact-form').addEventListener('submit', function(event) {
             event.preventDefault();
 
-            emailjs.sendForm(service_2iyqzam, template_9xmgo5l, this).then(function() {
+            emailjs.sendForm('service_2iyqzam', 'template_9xmgo5l', this).then(function() {
                 alert('Thank you for sending Highland Ethiopian Coffee and email! We will respond to your inquiry as soon as possible.');
             }, function(error) {
                 console.log('FAILED...', error);
