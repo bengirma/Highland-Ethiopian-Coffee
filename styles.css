@@ -137,7 +137,7 @@ nav ul li:hover .dropdown, nav ul li:focus-within .dropdown {
     margin-bottom: 30px;
     display: inline-block;
     vertical-align: top;
-    width: 10px; /* Fixed width for thumbnail */
+    width: 200px; /* Fixed width for thumbnail */
     margin-right: 20px;
 }
 
