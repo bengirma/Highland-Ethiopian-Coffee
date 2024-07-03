@@ -11,17 +11,23 @@ body {
     background-color: #FAE5C3; /* Beige background */
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.6;
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
     text-align: center;
+    flex: 1;
 }
 
 header {
     background-color: #FAE5C3; /* Beige color */
     padding: 10px 0;
-    position: relative;
     width: 100%;
 }
 
@@ -148,7 +154,7 @@ nav ul li:hover .dropdown, nav ul li:focus-within .dropdown {
 }
 
 .products .product h3 {
-    font-size: 1.2rem;
+    font-size: 1rem; /* Smaller text size */
     margin-bottom: 10px;
 }
 
@@ -188,4 +194,32 @@ footer {
     width: 100%;
     position: fixed;
     bottom: 0;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin-left: 0;
+    }
+
+    nav ul li .dropdown {
+        position: static;
+        box-shadow: none;
+        min-width: 100%;
+    }
+
+    .hero h2 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
 }
